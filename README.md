@@ -8,6 +8,7 @@ Características:
 - Parallax
 - Controles para ir adelante o atrás
 - Loop infinito entre elementos
+- Ajuste al alto y ancho de la pantalla
 
 Éste plugin está en Beta, cualquier persona que desee aportar con el proyecto, estoy disponible a sus ayudas.
 No conozco mucho sobre código profesional, sería de gran ayuda convertirlo en tal.
