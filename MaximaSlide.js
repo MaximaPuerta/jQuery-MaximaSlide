@@ -1,13 +1,13 @@
 (function($){
 	"use strict";
 	$.fn.MaximaSlide = function(opciones){
-		$("body").addClass('body');
+		$(document.body).addClass('body');
 		var conf = $.extend({
 			tiempoPaso: 3000, /* Tiempo entre cambio de imágenes */
 			accesibleTeclado: true, /* Indicar si quieres tener la posibilidad de pasar la imagen desde las flechas del teclado */
 			mensajes: true, /* Habilitar o inhabilitar los mensajes o captions en inglés */
 			parallax: false, /* Activar efecto Parallax en las imágenes */
-			mostrarControles: true, /* Mostrar los controles, debe estar especificado el HTML correspondiente, en caso contrario se desactivará automáticamente. */
+			mostrarControles: true /* Mostrar los controles, debe estar especificado el HTML correspondiente, en caso contrario se desactivará automáticamente. */
 		},opciones),
 		esto = $(this),
 		ven = $(window),
@@ -18,7 +18,8 @@
 		controles = $(esto).find('.controles'),
 		btnAnterior = $(controles).find('button.boton-anterior'),
 		btnSiguiente = $(controles).find("button.boton-siguiente"),
-		imgContainer = $(esto).find(".slide-w .img-container"),
+		sliderContainer = $(esto).find('.slide-w'),
+		imgContainer = $(sliderContainer).find(".img-container"),
 		imgItems = $(imgContainer).find(".img-item"),
 		imgCaption = $(imgItems).find(".mensaje"),
 		check = function(el){
@@ -26,8 +27,12 @@
 		};
 
 		esto.addClass('MaximaSlide'); /* Comenta ésta linea si deseas */
+		//console.log(btnAnterior,btnSiguiente,imgItems,imgCaption,imgContainer);
 
-		//imgItems.not(".mensaje").css('opacity', '0');
+		//imgItems.css('opacity', conf.opacidadImagenes);
+		sliderContainer.css({
+			"height": ven.height()
+		});
 
 		$.each(imgItems,function(i,e){
 			$(e).css({
@@ -61,7 +66,11 @@
 			imgContainer.css({
 				"width": ven.width(),
 				"height": ven.height()
-			});;
+			});
+
+			sliderContainer.css({
+				"height": ven.height()
+			});
 		});
 
 		btnAnterior.on('click', function(e) {
