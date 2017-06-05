@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+*,html,body{ /* Resetear CSS del navegador */
+	margin: 0;padding: 0
+}
 .resolucion{
 	position: fixed; /* Posicion estatica sin importar Scroll o Redimension de la ventana */
 	right: 7px;
