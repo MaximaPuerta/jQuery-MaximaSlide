@@ -1,4 +1,4 @@
-# jQuery-MaximaSlide
+# Plugin para jQuery - Máxima Slide
 Plugin de jQuery - Slider de imágenes completamente adaptativo
 
 Características:
