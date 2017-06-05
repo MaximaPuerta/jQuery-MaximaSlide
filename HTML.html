@@ -1,36 +1,39 @@
-<!-- MaximaSlide -->
-<div class="MaximaSlide">
-	<div class="controles">
-		<button class="boton-anterior">&Precedes;</button>
-		<button class="boton-siguiente">&Succeeds;</button>
-	</div>
-	<div class="slide-w">
-		<div class="img-container">
-			<div class="img-item" style="background-image: url(img/prueba/1.jpg)">
-				<div class="mensaje">
-					<h1>EVENTO EN UNA PISCINA</h1>
-					<!--<p>Todo es posible</p>-->
-				</div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Máxima Slide</title>
+		<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="MaximaSlide.js"></script>
+		<link rel="stylesheet" href="MaximaSlide.css">
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".elemento").MaximaSlide({
+					tiempoPaso: 5000,
+					parallax: true
+				});
+			});
+		</script>
+		<!-- MaximaSlide -->
+		<div class="elemento">
+			<div class="controles">
+				<button class="boton-anterior">&Precedes;</button>
+				<button class="boton-siguiente">&Succeeds;</button>
 			</div>
-			<div class="img-item" style="background-image: url(img/prueba/2.jpg)">
-				<div class="mensaje">
-					<h1>FOTOGRAFÍA EN GRUPO</h1>
-					<!--<p>Todo es posible</p>-->
-				</div>
-			</div>
-			<div class="img-item" style="background-image: url(img/prueba/3.jpg)">
-				<div class="mensaje">
-					<h1>ALGUIEN ESTÁ DISTRAÍDO...</h1>
-					<!--<p>Todo es posible</p>-->
-				</div>
-			</div>
-			<div class="img-item" style="background-image: url(img/prueba/4.jpg)">
-				<div class="mensaje">
-					<h1>SERVICIO DE RADIO</h1>
-					<!--<p>Todo es posible</p>-->
+			<div class="slide-w">
+				<div class="img-container">
+					<div class="img-item" style="background-image: url(http://via.placeholder.com/1024x768?text=Hey+como+estas)">
+						<div class="mensaje">
+							<h1>Título</h1>
+							<p>Subtítulo</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
-<!-- MaximaSlide -->
+		<!-- MaximaSlide -->
+	</body>
+</html>
