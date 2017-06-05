@@ -43,13 +43,13 @@ Para inicializar plugin:
 $(".clase-de-elemento").MaximaSlide();
 ```
 
-Opciones del plugin:
+Opciones del plugin con sus valores predeterminados:
 ```javascript
-tiempoPaso: milisegundos, /* Tiempo entre cambio de imágenes */
-accesibleTeclado: bool, /* Indicar si quieres tener la posibilidad de pasar la imagen desde las flechas del teclado */
-mensajes: bool, /* Habilitar o inhabilitar los mensajes o captions en inglés */
-parallax: bool, /* Activar efecto Parallax en las imágenes */
-mostrarControles: bool, /* Mostrar los controles, debe estar especificado el HTML correspondiente, en caso contrario se desactivará automáticamente. */
+tiempoPaso: 3000, /* Tiempo entre cambio de imágenes */
+accesibleTeclado: true, /* Indicar si quieres tener la posibilidad de pasar la imagen desde las flechas del teclado */
+mensajes: true, /* Habilitar o inhabilitar los mensajes o captions en inglés */
+parallax: false, /* Activar efecto Parallax en las imágenes */
+mostrarControles: true, /* Mostrar los controles, debe estar especificado el HTML correspondiente, en caso contrario se desactivará automáticamente. */
 
 /*Ejemplo*/
 $(".clase-de-elemento").MaximaSlide({
@@ -57,5 +57,6 @@ $(".clase-de-elemento").MaximaSlide({
     parallax: true
 });
 ```
+
 
 Iré agregando características en base a los comentarios y sugerencias. :)
