@@ -168,10 +168,3 @@
 		});
 	}
 }(jQuery));
-
-$(document).ready(function() {
-	$(".MaximaSlide").MaximaSlide({
-		tiempoPaso: 3000,
-		accesibleTeclado: true
-	});
-});
