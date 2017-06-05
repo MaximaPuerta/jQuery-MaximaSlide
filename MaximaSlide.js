@@ -7,11 +7,7 @@
 			accesibleTeclado: true, /* Indicar si quieres tener la posibilidad de pasar la imagen desde las flechas del teclado */
 			mensajes: true, /* Habilitar o inhabilitar los mensajes o captions en inglés */
 			parallax: false, /* Activar efecto Parallax en las imágenes */
-			mostrarResolucionPantalla: false, /* Esto es más para pruebas, ver la resolución actual de tu dispositivo. */
 			mostrarControles: true, /* Mostrar los controles, debe estar especificado el HTML correspondiente, en caso contrario se desactivará automáticamente. */
-			sinParar: true, /* "Inifine Loop", al terminar la secuencia de imagenes regresará a la primera y así sucesivamente, también aplica para el botón "Anterior" */
-			opacidadImagenes: 1, /* Si no deseas que las imagenes sean 100% visibles, ajusta de 0 a 1 el valor que consideres aceptable. */
-			modoPruebas: false /* Modo Debug, para revisar cada suceso o movimiento del Slider */
 		},opciones),
 		esto = $(this),
 		ven = $(window),
@@ -30,9 +26,8 @@
 		};
 
 		esto.addClass('MaximaSlide'); /* Comenta ésta linea si deseas */
-		//console.log(btnAnterior,btnSiguiente,imgItems,imgCaption,imgContainer);
 
-		imgItems.not(".mensaje").css('opacity', '0');
+		//imgItems.not(".mensaje").css('opacity', '0');
 
 		$.each(imgItems,function(i,e){
 			$(e).css({
